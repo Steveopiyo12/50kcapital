@@ -1,0 +1,103 @@
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+}
+
+body h1, body h2 {
+  font-size: .8rem;
+  margin: 10px;
+  text-align: center;
+}
+
+body p {
+  font-size: .6rem;
+  margin-top: 5px;
+}
+
+body .required {
+  color: red;
+}
+
+a {
+  color: #a4c639;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background-color: #eee;
+  margin-top: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  padding: 1em;
+}
+
+main .title-div {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  background-color: #fff;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+main form {
+  margin: 1em 0;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+main form .input_wrap {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em 1.2em;
+  border-radius: 8px;
+  margin-top: 1em;
+}
+
+main form .input_wrap label {
+  font-size: .5rem;
+}
+
+main form .input_wrap input, main form .input_wrap select, main form .input_wrap textarea {
+  margin-top: 1.2em;
+  padding: 10px;
+  border: transparent;
+  border-bottom: 2px solid #eee;
+}
+
+main form .input_wrap textarea {
+  border: 2px solid #eee;
+  border-radius: 5px;
+}
+
+main form input[type="button"] {
+  background-color: #a4c639;
+  border: 2px solid #a4c639;
+  padding: 8px 24px;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 1em;
+}
+
+main .last-div {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+/*# sourceMappingURL=forms.css.map */

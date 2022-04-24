@@ -1,0 +1,60 @@
+a {
+  text-decoration: none;
+  color: #a4c639;
+}
+
+main {
+  margin-top: 60px;
+  padding: 1.2em;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+main .search_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: .8em 0;
+}
+
+main .search_bar input {
+  padding: 8px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+main .users_display table {
+  text-align: left;
+}
+
+main .users_display table thead {
+  font-size: .7em;
+}
+
+main .users_display table tbody {
+  font-size: .6em;
+}
+
+main .users_display table tbody .edit {
+  background-color: #a4c639;
+  color: white;
+  border: 1px solid #a4c639;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+main .users_display table tbody .delete {
+  background-color: #ff0000b3;
+  color: white;
+  border: 1px solid #ff0000b3;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=users.css.map */

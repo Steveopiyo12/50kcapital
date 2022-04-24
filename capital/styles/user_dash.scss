@@ -1,0 +1,142 @@
+#userdash_main{
+    grid-template-columns: auto 1fr;
+    padding: 0;
+    grid-template-rows: 1fr;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+
+    // Colors
+    $themeColor: #a4c639; 
+
+    a{
+        color: $themeColor;
+    }
+
+    button{
+        padding: 10px;
+        border: 1px solid $themeColor;
+        border-radius: 4px;
+        font-size: .6em;
+    }
+    #side_nav{
+        text-align: center;
+        background-color: #fff;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 9em;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        .nav_controls{
+            grid-row: 1/2;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 5px;
+            font-size: .6em;
+            i{
+                color: #435509;
+            }
+        }
+        .user_details{
+            grid-row: 2/3;
+            border: 1px solid #dddddd49;
+            padding: 10px;
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+            p{
+                font-size: .55em;
+            }
+        }
+        nav{
+            grid-row: 3/4;
+            ul{           
+                text-align: left;     
+                .active{
+                    background-color: #a4c639;
+                }
+                li{
+                    padding: 12px 1em;
+                    font-size: .6em;
+                    &:hover{
+                        background-color: #a5c6398f;
+                    }
+                }
+            }
+        }
+        .log_sessions{
+            grid-row: 4/5;
+            padding: 1em;
+            button{
+                width: 100%;
+                background-color: #ff0000b9;
+                border-color: #ff0000b9;
+                color: #fff;
+            }
+        }
+    }
+    #content_layer{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-rows: 1fr;
+        #new_user_content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .wrap{
+                background: url('../Assets/celebration.png'), linear-gradient(0deg, #fff, #fff);
+                background-color: #fff;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position-y: -2em;
+                background-position-x: center;
+                padding: 1.2em 2.5em;
+                text-align: center;
+                color: #354402;
+                border-radius: 10px;
+                box-shadow: 0 0 25px #a5c63936;
+            }
+            h2{
+                font-size: 1.2em;
+            }
+            h3{
+                font-size: 1em;
+            }
+            button{
+                background-color: transparent;
+                color: #7ca101;
+                border: 2px solid $themeColor;
+                margin-top: 1em;
+                width: 200px;
+            }
+        }
+        #complete_application{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .wrap{ padding: 1.2em 2.5em;
+                text-align: center;
+                color: #354402;
+                border-radius: 10px;
+                box-shadow: 0 0 25px #a5c63936;
+                h2{
+                    font-size: 1em;
+                }
+                background-color: #fff;
+                .inputs{
+                    margin: 10px;
+                    input{
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

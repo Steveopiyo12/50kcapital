@@ -1,0 +1,75 @@
+
+// Colors
+$themeColor: #a4c639; 
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr;
+	h1,h2{
+		font-size: .8rem;
+		margin: 10px;
+		text-align: center;
+	}
+	p{
+		font-size: .6rem;
+		margin-top: 5px;
+	}
+	.required{
+		color: red;
+	}
+}
+a{
+	color: $themeColor;
+}
+main{
+    grid-row: 2/3;
+	background-color: #eee;
+	margin-top: 60px;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	padding: 1em;
+	.title-div{
+		grid-column: 2/3;
+		background-color: #fff;
+		height: fit-content;
+		border-radius: 4px;
+		padding: 1em;
+		
+	}
+	form{
+		margin: 1em 0;
+		grid-column: 2/3;
+		.input_wrap{
+			background-color: #fff;
+			display: flex;
+			flex-direction: column;
+			padding: 1em 1.2em;
+			border-radius: 8px;
+			margin-top: 1em;
+			label{
+				font-size: .5rem;
+			}
+			input,select,textarea{
+				margin-top: 1.2em;
+				padding: 10px;
+				border: transparent;
+				border-bottom: 2px solid #eee;
+			}
+			textarea{
+				border: 2px solid #eee;
+				border-radius: 5px;
+			}
+		}
+		input[type="button"]{
+			background-color: #a4c639;
+			border: 2px solid $themeColor;
+			padding: 8px 24px;
+			border-radius: 5px;
+			color: #fff;
+			margin-top: 1em;
+		}
+	}
+	.last-div{
+		grid-column: 2/3;
+	}
+}

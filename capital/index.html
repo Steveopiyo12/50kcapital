@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/logo.PNG" alt="overcrunch logo">
+        <input type="checkbox" id="menu-trigger">
+        <nav>
+            <ul class="links">
+                <a href="/"><li data-section="">Home</li></a>
+                <a href="pages/admin_dashboard.html"><li data-section="">Admin</li></a>
+                <a href="pages/user_profile.html"><li data-section="">Profile</li></a>
+                <a href="pages/Signup.html"><li data-section="">Signup</li></a>
+                <a href="pages/users.html"><li data-section="">Users</li></a>
+                <a href="pages/category2_form.html"><li data-section="">Cat1</li></a>
+                <a href="pages/category2_form.html"><li data-section="">Cat2</li></a>
+                <a href="pages/confirm_payment.html"><li data-section="">Pay</li></a>
+                <a href="pages/user_dashboard.html"><li data-section="">UsDash</li></a>
+            </ul>
+        </nav>
+        <label class="menu-trigger-label" for="menu-trigger">
+            <span></span>
+        </label>
+    </header>
+    <main>
+        <aside>
+            <h2>Mission</h2>
+            <p>To support atleast 10,000 youths by financing their small business.</p>
+
+            <h2 class="vision">Vision</h2>
+            <p>To improve Kenyan lives and lifestyles by positively impacting the Kenyan Economy through encouraging self-employment.</p>
+        </aside>
+        <aside id="l_form">
+            <h1>Login</h1>
+            <form action="#">
+                <input type="text" placeholder="Email or Phone">
+                <input type="password" placeholder="Password">
+                <input type="button" value="Sign in"/>
+            </form>
+
+            <label>
+                Don't have an account? <a href="/pages/Signup.html">Sign up</a>
+            </label>
+        </aside>        
+    </main>
+</body>
+</html>
